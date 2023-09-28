@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let match of matches">
+      <td>{{ match.name }}</td>
+      <td>{{ match.location.address }}</td>
+      <td>{{ match.location.city }}</td>
+      <td>
+        
+      </td>
+    </tr>
+  </tbody>
+</table>

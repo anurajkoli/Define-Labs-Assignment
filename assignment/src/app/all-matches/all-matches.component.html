@@ -1,0 +1,20 @@
+ <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>Save</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let match of matches">
+          <td>{{ match.name }}</td>
+          <td>{{ match.location.address }}</td>
+          <td>{{ match.location.city }}</td>
+          <td>
+            <button (click)="addToSaved(match)">★</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
